@@ -13,6 +13,9 @@ public class UserProfileViewModel extends ViewModel {
     private LiveData<User> user;
     private UserRepository userRepo;
 
+    public UserProfileViewModel() {
+    }
+
     @Inject
     public UserProfileViewModel(UserRepository userRepo) {
         this.userRepo = userRepo;
